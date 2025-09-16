@@ -5,18 +5,38 @@ let two = document.getElementById("two")
 let output = document.getElementById("output")
 
 function doAdd(){
+    if ((Number(one.value)+Number(two.value)) < 0){
+        output.style.color = 'red';
+    }else{
+        output.style.color = 'black';
+    }
     output.innerHTML=String(Number(one.value)+Number(two.value));
 }
 
 function doSub(){
+    if ((Number(one.value)-Number(two.value)) < 0){
+        output.style.color = 'red';
+    }else{
+        output.style.color = 'black';
+    }
     output.innerHTML=String(Number(one.value)-Number(two.value));
 }
 
 function doMul(){
+    if ((Number(one.value)*Number(two.value)) < 0){
+        output.style.color = 'red';
+    }else{
+        output.style.color = 'black';
+    }
     output.innerHTML=String(Number(one.value)*Number(two.value));
 }
 
 function doDiv(){
+    if ((Number(one.value)/Number(two.value)) < 0){
+        output.style.color = 'red';
+    }else{
+        output.style.color = 'black';
+    }
     output.innerHTML=String(Number(one.value)/Number(two.value));
 }
 
@@ -25,11 +45,16 @@ function doPow(){
     for(let i=0; i<Number(two.value); i++){
         x *= Number(one.value)
     }
+    if (x < 0){
+        output.style.color = 'red';
+    }else{
+        output.style.color = 'black';
+    }
     output.innerHTML=String(x);
 }
 
 function doClear(){
-    document.getElementById('one').value = '';
-    document.getElementById('two').value = '';
+    one.value = '';
+    two.value = '';
     output.innerHTML='';
 }
