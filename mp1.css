@@ -104,6 +104,18 @@ th, td {
     padding: 8px 10px;
 }
 
+#calc{
+    background-color: lightpink;
+
+}
+
+#calc button{
+    background-color: #A53860;
+    color: white;
+    margin-top: 10px;
+
+}
+
 /* above is desktop below is mobile display */
 @media screen and (max-width: 1000px){
 

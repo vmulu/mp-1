@@ -38,19 +38,75 @@
                         Projects
                     </h2>
 
-                    <!-- replace with info -->
+                    <div id="collection">
+                        <div id="item">
+                            <h3>
+                                Connect 4 | <em>Python</em>
+                            </h3>
+                            <p>
+                                November 2022
+                            </p>
+                            <p>
+                                Developed a sophisticated program employing classes to facilitate player-versus-AI competition,
+                                leveraging recursion to calculate a numerical value for the optimal move of the AI.
+                            </p>
+                        </div>
+                        <div id="item">
+                            <h3>
+                                MelaninRx | <em>Python, HTML, CSS, Javascript</em>
+                             </h3>
+                             <p>
+                                December 2023
+                             </p>
+                             <p>
+                                Incorporated AI chatbot by implementing OpenAI API to create a functional website that was
+                                designed to help patients receive medical advice without medical bias. While working on the
+                                front-end I gained valuable strategies on how to make an efficient website to promote patient satisfaction.
+                             </p>
+                        </div>
+                        <div id="item">
+                            <h3>
+                                Terraform Validator | <em>Python, Docker, Jenkins, AWS</em>
+                             </h3>
+                             <p>
+                                Summer 2024
+                             </p>
+                             <p>
+                                Developed TFPlan Validator repository to automate checking on terraform files during a Jenkins build
+                                to catch any unintended deletion or replacement of AWS resources. Is successfully integrated into the
+                                Data Pipeline teams production repository at AthenaHealth.
+                             </p>
+                        </div>
+                    </div>
+
+                    <!-- make neg numbers red -->
+
+                    <div id="calc">
+                        <h2>
+                            Victoria's Mini Calculator Project
+                        </h2>
+                        <label for="one"> </label><input id="one"/>
+                        <label for="two"> </label><input id="two"/>
+                        <br>
+                        <button onclick="doAdd()"> + </button>
+                        <button onclick="doSub()"> - </button>
+                        <button onclick="doMul()"> * </button>
+                        <button onclick="doDiv()"> / </button>
+                        <button onclick="doPow()"> ** </button>
+                        <button onclick="doClear()"> Clear </button>
+                        <h2 id="output"></h2>
+                    </div>
 
                 </main>
 
             </div>
 
             <footer>
-               <p> All Rights Reserved by Victoria Mulugeta &#169; </p>
-                <!-- add credit link -->
+                <p> All Rights Reserved by Victoria Mulugeta <a href="">Credits</a> &#169; </p>
             </footer>
 
         </div>
-
+        <script src="./mp1.js"></script>
     </body>
 
 </html>
